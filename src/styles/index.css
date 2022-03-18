@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .App {
+    @apply bg-richBlack text-white w-screen h-screen flex justify-center items-center;
+  }
+
+  .board {
+    @apply bg-turquoiseGreen rounded grid grid-cols-4 relative gap-3 p-3 m-3;
+  }
+
+  .box {
+    @apply bg-palePink rounded p-3 w-[15vmin] h-[15vmin];
+  }
+
+  .tile {
+    @apply bg-blue-500 rounded absolute p-3 w-[15vmin] h-[15vmin] left-3 top-3;
+  }
+}

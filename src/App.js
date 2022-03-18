@@ -1,7 +1,14 @@
+import { useState } from 'react'
 export default function App() {
+  const [slideCount, setSlideCount] = useState(4)
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <div className="board">
+        { Array.from(Array(Math.pow(slideCount, 2)).keys()).map(i => (
+          <div className="box"></div>
+        )) }
+        <div className="tile"></div>
+      </div>
     </div>
   )
 }
